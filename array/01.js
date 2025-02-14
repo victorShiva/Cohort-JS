@@ -55,3 +55,29 @@ data.split(",")   //['Manchester','London','Liverpool','Birmingham','Leeds','Car
 const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
 dogNames.join(",")              // Rocket,Flash,Bella,Slugger
 
+
+/********* sort() 
+ * sorts the elements of an aray and return the reference to the same array,now sorted.
+ * 
+*/
+const months = ["March", "Jan", "Feb", "Dec"];
+months.sort();         //[ 'Dec', 'Feb', 'Jan', 'March' ]
+
+const array1 = [1, 30, 4, 21, 100000, 1111];
+array1.sort();          // [ 1, 100000, 1111, 21, 30, 4 ]
+
+array1.sort((a, b) => a - b)      //[ 1, 4, 21, 30, 1111, 100000 ]
+
+
+
+/***
+*concat()
+*useed to merge two or more arrays.
+*does not change existing arrays , but instead returns new array.
+*/
+
+const array2 = ["a", "b", "c"];
+const array3 = ["d", "e", "f"];
+const array4 = ["g", "h"];
+
+const array5 = array2.concat(array3, array4);               //[ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ]
